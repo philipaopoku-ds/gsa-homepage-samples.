@@ -391,7 +391,6 @@ footer{padding-block:28px 40px}
   <button type="button" data-scheme="purple" aria-pressed="false"><span class="sw" style="background:#832b8f" aria-hidden="true"></span>Purple</button>
   <button type="button" data-scheme="blue" aria-pressed="false"><span class="sw" style="background:#1a6f93" aria-hidden="true"></span>Blue</button>
   <button type="button" data-scheme="gsa-blue" aria-pressed="false"><span class="sw" style="background:linear-gradient(90deg,#50b6db 50%,#20084d 50%)" aria-hidden="true"></span>GSA Blue (exact)</button>
-  <button type="button" data-scheme="multi" aria-pressed="false"><span class="sw" style="background:conic-gradient(#8cc63e 0 25%,#fbaf17 0 50%,#c5168c 0 75%,#832b8f 0)" aria-hidden="true"></span>Multicolour</button>
   <span class="grp" aria-hidden="true"></span>
   <span class="lab">Headline</span>
   <button type="button" class="hl" data-h="0" aria-pressed="true">We've got you</button>
@@ -593,7 +592,7 @@ footer{padding-block:28px 40px}
 </script>
 <script>
 (function(){
-  var names=['green','purple','blue','gsa-blue','multi'],root=document.documentElement;
+  var names=['green','purple','blue','gsa-blue'],root=document.documentElement;
   var btns=document.querySelectorAll('.schemes button[data-scheme]');
   function set(n){
     if(names.indexOf(n)<0)n='green';
