@@ -372,6 +372,14 @@ footer{padding-block:28px 40px}
 .who-links{display:flex;flex-wrap:wrap;gap:6px 22px}
 .who-links .more{margin-top:0}
 .moment[data-m="online"]{--dot:var(--b)}
+
+/* aligned lists: same lead column and action column on every row */
+.list .row{grid-template-columns:76px minmax(0,1fr) 104px;column-gap:12px}
+.list .row > :first-child{justify-self:start}
+.list .row .sm{justify-self:end;text-align:right;white-space:nowrap}
+.nw{white-space:nowrap}
+.contact .hrs{margin-top:10px}
+@media (max-width:560px){.list .row{grid-template-columns:76px minmax(0,1fr);row-gap:8px}.list .row .sm{grid-column:2;justify-self:start;text-align:left}}
 </style>
 <style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
@@ -526,7 +534,7 @@ footer{padding-block:28px 40px}
             <li><b>You get it sorted</b><span>We help you take the next step.</span></li>
           </ol>
           <div class="contact">
-            <div><h3>Visit</h3><p>ES 1030, 10th Floor<br>Earth Science building</p><p class="hrs"><b>Drop-in:</b> Tue&ndash;Thu, 10 a.m.&ndash;3 p.m.<br><b>Virtual front desk:</b> Mon 1&ndash;3 p.m., Fri 9&ndash;11 a.m.</p></div>
+            <div><h3>Visit</h3><p>ES 1030, 10th Floor<br>Earth Science building</p><p class="hrs"><b>Drop-in</b><br><span class="nw">Tue&ndash;Thu, 10 a.m.&ndash;3 p.m.</span></p><p class="hrs"><b>Virtual front desk</b><br><span class="nw">Mon, 1&ndash;3 p.m.</span><br><span class="nw">Fri, 9&ndash;11 a.m.</span></p></div>
             <div><h3>Email or call</h3><p><span id="mail">askgsa@ucalgary.ca</span><button class="copy" type="button" data-copy="mail">Copy</button></p><p>403-220-5997</p></div>
           </div>
         </div>
