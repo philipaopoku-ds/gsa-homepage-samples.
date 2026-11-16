@@ -322,19 +322,6 @@ footer{padding-block:28px 40px}
 :root[data-scheme="multi"] .pillars li:nth-child(1) .pi{color:var(--p)}:root[data-scheme="multi"] .pillars li:nth-child(2) .pi{color:var(--b)}:root[data-scheme="multi"] .pillars li:nth-child(3) .pi{color:var(--g)}
 .site-foot{padding-bottom:104px}
 
-/* two-colour blends: first colour leads (headings, highlights), second is for actions (buttons, links) */
-:root[data-scheme="purple-pink"]{--plum:#832b8f;--plum-deep:#5e1d68;--magenta:#c5168c;--magenta-deep:#a10f72;--sky:#c5168c;--pink-soft:#fbe7f3;--sky-soft:#f3e8f5;--hero:#4a1652}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"])[data-scheme="purple-pink"]{--ground:#131116;--mist:#1c1a20;--line:#2f2c35;--ink:#f2f0f4;--muted:#b9b4c0;--on-strong:#131116;color-scheme:dark;--plum:#c98bd3;--plum-deep:#e0b5e6;--magenta:#f064bd;--magenta-deep:#ff9fd6;--sky:#f064bd;--pink-soft:#3a1530;--sky-soft:#2b1a30}}
-:root[data-theme="dark"][data-scheme="purple-pink"]{--ground:#131116;--mist:#1c1a20;--line:#2f2c35;--ink:#f2f0f4;--muted:#b9b4c0;--on-strong:#131116;color-scheme:dark;--plum:#c98bd3;--plum-deep:#e0b5e6;--magenta:#f064bd;--magenta-deep:#ff9fd6;--sky:#f064bd;--pink-soft:#3a1530;--sky-soft:#2b1a30}
-:root[data-scheme="green-orange"]{--plum:#3e6b2f;--plum-deep:#2c4f20;--magenta:#b05f00;--magenta-deep:#8a4a00;--sky:#b05f00;--pink-soft:#fff1d6;--sky-soft:#edf5e5;--hero:#23401a}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"])[data-scheme="green-orange"]{--ground:#131116;--mist:#1c1a20;--line:#2f2c35;--ink:#f2f0f4;--muted:#b9b4c0;--on-strong:#131116;color-scheme:dark;--plum:#9fd46a;--plum-deep:#c4e8a0;--magenta:#f7c35c;--magenta-deep:#ffd98a;--sky:#f7c35c;--pink-soft:#33260d;--sky-soft:#1c2a14}}
-:root[data-theme="dark"][data-scheme="green-orange"]{--ground:#131116;--mist:#1c1a20;--line:#2f2c35;--ink:#f2f0f4;--muted:#b9b4c0;--on-strong:#131116;color-scheme:dark;--plum:#9fd46a;--plum-deep:#c4e8a0;--magenta:#f7c35c;--magenta-deep:#ffd98a;--sky:#f7c35c;--pink-soft:#33260d;--sky-soft:#1c2a14}
-:root[data-scheme="navy-blue"]{--plum:#20084d;--plum-deep:#14042f;--magenta:#1a6f93;--magenta-deep:#124f6a;--sky:#1a6f93;--pink-soft:#e3f3fa;--sky-soft:#ece8f3;--hero:#20084d}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"])[data-scheme="navy-blue"]{--ground:#131116;--mist:#1c1a20;--line:#2f2c35;--ink:#f2f0f4;--muted:#b9b4c0;--on-strong:#131116;color-scheme:dark;--plum:#c3b2ea;--plum-deep:#ddd2f5;--magenta:#7fcde8;--magenta-deep:#b5e4f4;--sky:#7fcde8;--pink-soft:#12303f;--sky-soft:#231a3a}}
-:root[data-theme="dark"][data-scheme="navy-blue"]{--ground:#131116;--mist:#1c1a20;--line:#2f2c35;--ink:#f2f0f4;--muted:#b9b4c0;--on-strong:#131116;color-scheme:dark;--plum:#c3b2ea;--plum-deep:#ddd2f5;--magenta:#7fcde8;--magenta-deep:#b5e4f4;--sky:#7fcde8;--pink-soft:#12303f;--sky-soft:#231a3a}
-:root[data-scheme="green-purple"]{--plum:#3e6b2f;--plum-deep:#2c4f20;--magenta:#832b8f;--magenta-deep:#5e1d68;--sky:#832b8f;--pink-soft:#f3e8f5;--sky-soft:#edf5e5;--hero:#23401a}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"])[data-scheme="green-purple"]{--ground:#131116;--mist:#1c1a20;--line:#2f2c35;--ink:#f2f0f4;--muted:#b9b4c0;--on-strong:#131116;color-scheme:dark;--plum:#9fd46a;--plum-deep:#c4e8a0;--magenta:#c98bd3;--magenta-deep:#e0b5e6;--sky:#c98bd3;--pink-soft:#2b1a30;--sky-soft:#1c2a14}}
-:root[data-theme="dark"][data-scheme="green-purple"]{--ground:#131116;--mist:#1c1a20;--line:#2f2c35;--ink:#f2f0f4;--muted:#b9b4c0;--on-strong:#131116;color-scheme:dark;--plum:#9fd46a;--plum-deep:#c4e8a0;--magenta:#c98bd3;--magenta-deep:#e0b5e6;--sky:#c98bd3;--pink-soft:#2b1a30;--sky-soft:#1c2a14}
 .schemes .grp{flex-basis:100%;height:0}
 .schemes .lab{min-width:58px}
 .schemes .tog{order:99;margin-left:auto;font-weight:700;color:var(--muted)}
@@ -381,6 +368,10 @@ footer{padding-block:28px 40px}
 :root[data-scheme="gsa-blue"] .site-foot .lk-d{display:block}
 :root[data-scheme="gsa-blue"] .site-foot .lk-w{display:none}
 @media (max-width:560px){.lk{height:44px}}
+
+.who-links{display:flex;flex-wrap:wrap;gap:6px 22px}
+.who-links .more{margin-top:0}
+.moment[data-m="online"]{--dot:var(--b)}
 </style>
 <style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
@@ -394,19 +385,11 @@ footer{padding-block:28px 40px}
   <button type="button" data-scheme="gsa-blue" aria-pressed="false"><span class="sw" style="background:linear-gradient(90deg,#50b6db 50%,#20084d 50%)" aria-hidden="true"></span>GSA Blue (exact)</button>
   <button type="button" data-scheme="multi" aria-pressed="false"><span class="sw" style="background:conic-gradient(#8cc63e 0 25%,#fbaf17 0 50%,#c5168c 0 75%,#832b8f 0)" aria-hidden="true"></span>Multicolour</button>
   <span class="grp" aria-hidden="true"></span>
-  <span class="lab">Blends</span>
-  <button type="button" data-scheme="purple-pink" aria-pressed="false"><span class="sw" style="background:linear-gradient(90deg,#832b8f 50%,#c5168c 50%)" aria-hidden="true"></span>Purple + Pink</button>
-  <button type="button" data-scheme="green-orange" aria-pressed="false"><span class="sw" style="background:linear-gradient(90deg,#3e6b2f 50%,#fbaf17 50%)" aria-hidden="true"></span>Green + Orange</button>
-  <button type="button" data-scheme="navy-blue" aria-pressed="false"><span class="sw" style="background:linear-gradient(90deg,#20084d 50%,#50b6db 50%)" aria-hidden="true"></span>Navy + Blue</button>
-  <button type="button" data-scheme="green-purple" aria-pressed="false"><span class="sw" style="background:linear-gradient(90deg,#3e6b2f 50%,#832b8f 50%)" aria-hidden="true"></span>Green + Purple</button>
-  <span class="grp" aria-hidden="true"></span>
   <span class="lab">Headline</span>
   <button type="button" class="hl" data-h="0" aria-pressed="true">We've got you</button>
   <button type="button" class="hl" data-h="1" aria-pressed="false">Not alone</button>
   <button type="button" class="hl" data-h="2" aria-pressed="false">Help made easy</button>
-  <button type="button" class="hl" data-h="3" aria-pressed="false">Looked after</button>
   <button type="button" class="hl" data-h="4" aria-pressed="false">Start here</button>
-  <button type="button" class="hl" data-h="5" aria-pressed="false">Every grad student</button>
 </div>
 </div></div>
 <header class="site" id="top">
@@ -471,6 +454,7 @@ footer{padding-block:28px 40px}
         <button type="button" role="tab" class="moment" data-m="supervisor" aria-selected="false" aria-controls="answer">Trouble with my supervisor</button>
         <button type="button" role="tab" class="moment" data-m="people" aria-selected="false" aria-controls="answer">I want to meet people</button>
         <button type="button" role="tab" class="moment" data-m="work" aria-selected="false" aria-controls="answer">A TA or RA work question</button>
+        <button type="button" role="tab" class="moment" data-m="online" aria-selected="false" aria-controls="answer">I study online or part-time</button>
       </div>
       <div class="answer" id="answer" role="tabpanel" aria-live="polite">
         <div>
@@ -493,7 +477,7 @@ footer{padding-block:28px 40px}
         <p class="eyebrow">Who we are</p>
         <h2 id="whoTitle">Your voice at UCalgary</h2>
         <p class="who-lede">The Graduate Students' Association represents every graduate student at the University of Calgary. We're run by grad students, for grad students.</p>
-        <a class="more" href="#">About the GSA &rarr;</a>
+        <div class="who-links"><a class="more" href="#">About the GSA &rarr;</a><a class="more" href="#">Meeting minutes &amp; budgets &rarr;</a></div>
       </div>
       <ul class="pillars">
         <li><span class="pi" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l14-6v14L3 13z"></path><path d="M7 13v5a2 2 0 0 0 4 0v-3"></path></svg></span><b>We speak up for you</b><span>On tuition, fees and the issues that shape grad life.</span></li>
@@ -523,7 +507,7 @@ footer{padding-block:28px 40px}
           <li class="row"><span class="date"><small>NOV</small><b>20</b></span><div><h3>GSA&sup2; Transgender Day of Remembrance</h3><p>Last Defence Lounge &middot; Create &amp; Share collage</p></div><a class="sm" href="https://docs.google.com/forms/d/e/1FAIpQLSfKl0xjDYojY7aXai0hAFSVpX-A5LKqpipK8TyJok9nqPlfSg/viewform?usp=publish-editor" target="_blank" rel="noopener">Sign up &rarr;</a></li>
           <li class="row"><span class="date"><small>NOV</small><b>26</b></span><div><h3>GSA Membership Meeting</h3><p>5&ndash;7 p.m. &middot; Last Defence Lounge &middot; Free</p></div><a class="sm" href="https://www.eventbrite.ca/e/gsa-membership-meeting-tickets-2003929838090" target="_blank" rel="noopener">Register &rarr;</a></li>
         </ul>
-        <a class="more" href="#">All upcoming events &rarr;</a>
+        <a class="more" href="#">Full events calendar &rarr;</a>
       </div>
     </div>
   </section>
@@ -562,6 +546,7 @@ footer{padding-block:28px 40px}
     <nav class="foot-links" aria-label="Footer">
       <h3>Quick links</h3>
       <a href="#">About the GSA</a>
+      <a href="#">Meeting minutes &amp; budgets</a>
       <a href="#">Elections</a>
       <a href="#">Health &amp; dental plan</a>
       <a href="#">Policies &amp; governing documents</a>
@@ -600,7 +585,7 @@ footer{padding-block:28px 40px}
 </script>
 <script>
 (function(){
-  var names=['green','purple','blue','gsa-blue','multi','purple-pink','green-orange','navy-blue','green-purple'],root=document.documentElement;
+  var names=['green','purple','blue','gsa-blue','multi'],root=document.documentElement;
   var btns=document.querySelectorAll('.schemes button[data-scheme]');
   function set(n){
     if(names.indexOf(n)<0)n='green';
@@ -627,7 +612,8 @@ footer{padding-block:28px 40px}
     stress:{t:"You don't have to carry this alone.",p:"Reach out today. We can help you find mental health support on campus and the right person to talk to.",n:"If you're in crisis, call or text 988, the Suicide Crisis Helpline, any time, day or night.",l:[["Mental health support","#"],["Talk to the GSA","#talk"]]},
     supervisor:{t:"Supervisor problems are common, and there is help.",p:"Learn your academic rights and find out where to get advice before things escalate.",l:[["Know your academic rights","#"],["Talk to the GSA","#talk"]]},
     people:{t:"Grad school is better with friends.",p:"Come to an event, volunteer with the GSA or join a student group in your field.",l:[["Upcoming events","#events"],["Volunteer & committees","#"],["Student groups","#"]]},
-    work:{t:"Questions about your TA or RA job?",p:"Hours, pay or how you're being treated: find support on your rights at work.",l:[["TA / RA labour support","#"],["Talk to the GSA","#talk"]]}
+    work:{t:"Questions about your TA or RA job?",p:"Hours, pay or how you're being treated: find support on your rights at work.",l:[["TA / RA labour support","#"],["Talk to the GSA","#talk"]]},
+    online:{t:"Not on campus? You\'re still part of the GSA.",p:"Join online events, drop into the virtual front desk, and find the services you can use from anywhere.",n:"Virtual front desk: Mondays 1\u20133 p.m. and Fridays 9\u201311 a.m.",l:[["Online events","#events"],["Services you can use remotely","#"],["Talk to the GSA","#talk"]]}
   };
   var btns=document.querySelectorAll('.moment'),T=document.getElementById('ansTitle'),P=document.getElementById('ansText'),N=document.getElementById('ansNote'),L=document.getElementById('ansLinks');
   function pick(k){var m=M[k];if(!m)return;
@@ -653,7 +639,10 @@ footer{padding-block:28px 40px}
     {t:"Volunteer & committees",s:"Get Involved",k:"volunteer committee subcommittee council get involved"},
     {t:"Student groups",s:"Get Involved",k:"club group student association"},
     {t:"Upcoming events",s:"Events",k:"events meeting conference calendar register"},
-    {t:"Office hours & contact",s:"About",k:"contact office hours email phone help ask"}
+    {t:"Office hours & contact",s:"About",k:"contact office hours email phone help ask virtual front desk"},
+    {t:"Online & part-time students",s:"Support",k:"online part-time remote distance off campus virtual"},
+    {t:"Meeting minutes & budgets",s:"About",k:"minutes budget fees transparency meeting where does my fee go"},
+    {t:"Events calendar",s:"Events",k:"calendar events schedule what is on"}
   ];
   var q=document.getElementById('q'),res=document.getElementById('results');
   function show(v){
