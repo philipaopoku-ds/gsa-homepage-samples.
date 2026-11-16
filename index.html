@@ -352,6 +352,18 @@ footer{padding-block:28px 40px}
 .contact .hrs{margin-top:8px;font-size:15px}
 .contact .hrs b{color:var(--ink)}
 .hero h1{max-width:16ch}
+
+/* GSA Blue (exact): only style-guide colours: blue #50b6db, navy #20084d, white */
+:root[data-scheme="gsa-blue"]{--plum:#20084d;--plum-deep:#20084d;--magenta:#20084d;--magenta-deep:#50b6db;--sky:#50b6db;--pink-soft:#e5f4fa;--sky-soft:#e5f4fa;--hero:#20084d;--on-strong:#ffffff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"])[data-scheme="gsa-blue"]{--ground:#131116;--mist:#1c1a20;--line:#2f2c35;--ink:#f2f0f4;--muted:#b9b4c0;color-scheme:dark;--plum:#50b6db;--plum-deep:#50b6db;--magenta:#50b6db;--magenta-deep:#9bd6ec;--sky:#50b6db;--pink-soft:#12303f;--sky-soft:#12303f;--on-strong:#20084d}}
+:root[data-theme="dark"][data-scheme="gsa-blue"]{--ground:#131116;--mist:#1c1a20;--line:#2f2c35;--ink:#f2f0f4;--muted:#b9b4c0;color-scheme:dark;--plum:#50b6db;--plum-deep:#50b6db;--magenta:#50b6db;--magenta-deep:#9bd6ec;--sky:#50b6db;--pink-soft:#12303f;--sky-soft:#12303f;--on-strong:#20084d}
+:root[data-scheme="gsa-blue"] .btn{background:#50b6db;color:#20084d}
+:root[data-scheme="gsa-blue"] .btn:hover{background:#20084d;color:#ffffff}
+:root[data-scheme="gsa-blue"] header.site{border-bottom-color:#50b6db}
+:root[data-scheme="gsa-blue"] .moment[aria-selected="true"]{background:#50b6db;border-color:#50b6db;color:#20084d}
+:root[data-scheme="gsa-blue"] .steps li::before{background:#50b6db;color:#20084d}
+:root[data-scheme="gsa-blue"] .sp-tag{background:#50b6db;color:#20084d}
+:root[data-scheme="gsa-blue"] .site-foot{border-top:6px solid #50b6db}
 </style>
 <style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
@@ -362,6 +374,7 @@ footer{padding-block:28px 40px}
   <button type="button" data-scheme="green" aria-pressed="false"><span class="sw" style="background:#3e6b2f" aria-hidden="true"></span>Green</button>
   <button type="button" data-scheme="purple" aria-pressed="false"><span class="sw" style="background:#832b8f" aria-hidden="true"></span>Purple</button>
   <button type="button" data-scheme="blue" aria-pressed="false"><span class="sw" style="background:#1a6f93" aria-hidden="true"></span>Blue</button>
+  <button type="button" data-scheme="gsa-blue" aria-pressed="false"><span class="sw" style="background:linear-gradient(90deg,#50b6db 50%,#20084d 50%)" aria-hidden="true"></span>GSA Blue (exact)</button>
   <button type="button" data-scheme="multi" aria-pressed="false"><span class="sw" style="background:conic-gradient(#8cc63e 0 25%,#fbaf17 0 50%,#c5168c 0 75%,#832b8f 0)" aria-hidden="true"></span>Multicolour</button>
   <span class="grp" aria-hidden="true"></span>
   <span class="lab">Blends</span>
@@ -570,7 +583,7 @@ footer{padding-block:28px 40px}
 </script>
 <script>
 (function(){
-  var names=['green','purple','blue','multi','purple-pink','green-orange','navy-blue','green-purple'],root=document.documentElement;
+  var names=['green','purple','blue','gsa-blue','multi','purple-pink','green-orange','navy-blue','green-purple'],root=document.documentElement;
   var btns=document.querySelectorAll('.schemes button[data-scheme]');
   function set(n){
     if(names.indexOf(n)<0)n='green';
